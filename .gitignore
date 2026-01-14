@@ -1,3 +1,18 @@
 .claude/settings.local.json
 .claude/
 node_modules
+
+# Environment variables
+.env
+.env.local
+
+# Vercel artifacts
+.vercel/
+
+# Python cache and virtual environment
+__pycache__/
+*.db
+venv/
+
+# Next.js build output
+.next/
