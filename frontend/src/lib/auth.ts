@@ -120,7 +120,13 @@ export const logout = async (): Promise<boolean> => {
 
 // Check authentication status
 export const checkAuthStatus = async (): Promise<boolean> => {
-  // In a real app, you would validate the token with the backend
-  const userId = localStorage.getItem('user_id');
-  return !!userId; // Return true if user ID exists in localStorage
+  try {
+    // In a real app, you would validate the token with the backend
+    const userId = localStorage.getItem('user_id');
+    console.log('userId:', userId);
+    return !!userId; // Return true if user ID exists in localStorage
+  } catch (error) {
+    console.error('Error in checkAuthStatus:', error);
+    return false;
+  }
 };

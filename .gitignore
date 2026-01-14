@@ -94,3 +94,5 @@ coverage/
 lib-cov/
 
 nul
+.vercel
+.env*.local
