@@ -1,9 +1,9 @@
 from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
-from .database import create_db_and_tables
-from .api import tasks
-from .auth import auth_router
+from database import create_db_and_tables
+from api import tasks
+from auth import auth_router
 import os
 from dotenv import load_dotenv
 
