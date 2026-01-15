@@ -10,3 +10,4 @@ pytz==2023.3.post1
 cryptography
 email-validator==2.1.0
 psycopg2-binary
+mangum>=0.17.0

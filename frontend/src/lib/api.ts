@@ -1,6 +1,6 @@
 // API utility functions for interacting with the backend
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || (typeof window !== 'undefined' ? '/api' : 'http://localhost:8000');
 
 interface TaskCreateData {
   title: string;
